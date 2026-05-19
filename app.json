@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "BİRİKTİR",
-    "slug": "BİRİKTİR",
+    "slug": "biriktir-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -20,10 +20,16 @@
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
-      }
+      },
+      "package": "com.ipekpala.biriktirapp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "47fd2e49-cd12-4677-abb5-00243e015366"
+      }
     }
   }
 }
