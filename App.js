@@ -6,12 +6,13 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { db } from './components/firebaseConfig';
 import { collection, addDoc, getDocs, query, orderBy, doc, setDoc, getDoc } from 'firebase/firestore';
 
-// // Modüler Bileşenlerimiz ve Model Sınıfımız
+// Modüler Bileşenlerimiz ve Model Sınıfımız
 import { getTheme } from './components/Theme';
 import Header from './components/Header';
 import BarChart from './components/BarChart';
 import Transaction from './components/Transaction';
-
+import { initializeApp } from "firebase/app"
+import { getFirestore } from "firebase/firestore"
 export default function App() {
   // --- STATE YÖNETİMİ ---
   const [user, setUser] = useState({ name: '', surname: '', age: '', job: '', monthlyBudget: '' });
